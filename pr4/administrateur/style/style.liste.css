@@ -1,0 +1,30 @@
+body{
+    margin: 0 auto;
+    background-image: url("../img/tecnol.jpg")!important;
+background-color: rgb(239, 250, 247);
+    background-repeat: no-repeat;
+    background-size: 100% 820px;
+    overflow:auto;
+    border: solid 1px red;
+    
+   }
+
+   .container{
+   
+       margin-bottom: 0%;
+       box-shadow: 10px 15px 15px rgba(8, 90, 41, 0.3);
+  
+   }
+   .footer{
+   
+    margin-bottom: 15%;
+
+
+}
+.box{
+    box-shadow: 10px 15px 15px rgba(8, 8, 8, 0.3);
+}
+
+.box1{
+    box-shadow: 0px 5px 25px 5px rgba(8, 8, 8, 0.3);
+}

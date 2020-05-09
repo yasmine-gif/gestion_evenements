@@ -1,0 +1,37 @@
+body{
+    margin: 0 auto;
+    background-image: url("../img/slide1.jpg")!important;
+background-color: rgb(17, 20, 20);
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    overflow:auto;
+    
+   }
+
+   .container{
+       margin-top: 10%;
+       box-shadow: 10px 15px 15px rgba(8, 90, 41, 0.3);
+  
+   }
+
+   .box{
+    box-shadow: 10px 15px 15px rgba(8, 8, 8, 0.3);
+}
+
+.box1{
+    box-shadow: 0px 5px 25px 5px rgba(8, 8, 8, 0.3);
+}
+.box2{
+    box-shadow: 2px 5px 6px 6px rgba(20, 27, 1, 0.3);
+}
+.imgf{
+  background-color:beige;
+}
+   .forme{
+    height: 30% !important;
+
+   }
+   .footer{
+   
+    margin-top: 5%;
+}
