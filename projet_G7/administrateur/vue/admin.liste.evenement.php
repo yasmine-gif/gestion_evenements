@@ -1,4 +1,11 @@
 <?php
+// require_once('../../connexiondb/connexion.php');
+require_once('../../administrateur/modele/classe/controle.evenement.class.php');
+$base;
+
+
+
+
     require_once('../vue/header.php');
     
     ?>
@@ -33,28 +40,22 @@
            </thead>
           
           <tbody>
-        
-         <tr>
-             <td>Mariage</td>
-             <td>Lorem ipsum dolor sit, amet consectetur adipisicing </td>
-             <td> Nemo dicta, iusto laborum</td>
-             <td>13/03/2020</td>
-             <td>24/05/2020</td>
+          <tr>   <?php
+          $Myliste= new Gestion_evenement();
+  foreach($Myliste->getAll() as $Myliste) {
+   ?> <tr>
+      <td scope="row" style="font-size:20px;"><?php echo $Myliste['categorie'];?></td>
+      <td scope="row" style="font-size:20px;"><?php echo $Myliste['description'];?></td>
+      <td scope="row" style="font-size:20px;"><?php echo $Myliste['organisateur'];?></td>
+      <td scope="row" style="font-size:20px;"><?php echo $Myliste['date_debut'];?></td>
+      <td scope="row" style="font-size:20px;"><?php echo $Myliste['date_fin'];?></td>
+      
        </tr>
-       <tr>
-             <td>Anniversaire</td>
-             <td>Lorem ipsum dolor sit, amet consectetur adipisicing </td>
-             <td> Nemo dicta, iusto laborum</td>
-             <td>15/04/2020</td>
-             <td>28/06/2020</td>
-       </tr>
-       <tr>
-             <td>Festival Garba</td>
-             <td>Lorem ipsum dolor sit, amet consectetur adipisicing </td>
-             <td> Nemo dicta, iusto laborum</td>
-             <td>1/04/2021</td>
-             <td>8/07/2021</td>
-       </tr>
+
+       <?php  
+     
+      }
+      ?>
           </tbody>
          </table>
          <div class="container-fluid   " >

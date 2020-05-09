@@ -1,4 +1,6 @@
 <?php
+require_once('../../administrateur/modele/classe/controle.evenement.class.php');
+$base;
     require_once('../vue/header.php');
     
     ?>
@@ -32,9 +34,9 @@
              <tr class="m-0" >
                <th scope="col">Categorie</th>
                <th scope="col">Description</th>
-               <th scope="col">Organisateur</th>
-               <th scope="col">Date debut</th>
-               <th scope="col">Date fin</th>
+               <!-- <th scope="col">Organisateur</th>
+               <th scope="col">Date debut</th> -->
+               
                <th scope="col">SUPPRIMER</th>
               
              </tr>
@@ -43,30 +45,24 @@
           <tbody>
         
          <tr>
-             <td>Mariage</td>
-             <td>Lorem ipsum dolor sit, amet consectetur adipisicing </td>
-             <td> Nemo dicta, iusto laborum</td>
-             <td>13/03/2020</td>
-             <td>24/05/2020</td>
-             <td>-Supprimer</td>
+         <tr>   <?php
+         $Myliste= new Gestion_evenement();
+ foreach($Myliste->getAll() as $Myliste) {
+  ?> <tr>
+     <td scope="row" style="font-size:20px;"><?php echo $Myliste['categorie'];?></td>
+     <td scope="row" style="font-size:20px;"><?php echo $Myliste['description'];?></td>
+
+
+     <td><button class="btn btn-danger"><a href="../../administrateur/controleur/suppression_evenement/modele.supprimer.php?efface=<?php echo $Myliste['id_evenement']; ?>">supprimer</a></button></td>
+     
              
-       </tr>
-       <tr>
-             <td>Anniversaire</td>
-             <td>Lorem ipsum dolor sit, amet consectetur adipisicing </td>
-             <td> Nemo dicta, iusto laborum</td>
-             <td>15/04/2020</td>
-             <td>28/06/2020</td>
-             <td>-Supprimer</td>
-       </tr>
-       <tr>
-             <td>Festival Garba</td>
-             <td>Lorem ipsum dolor sit, amet consectetur adipisicing </td>
-             <td> Nemo dicta, iusto laborum</td>
-             <td>1/04/2021</td>
-             <td>8/07/2021</td>
-             <td>-Supprimer</td>
-       </tr>
+      </tr>
+
+      <?php  
+    
+     }
+     ?>
+      
           </tbody>
          </table>
          <div class="container-fluid   " >

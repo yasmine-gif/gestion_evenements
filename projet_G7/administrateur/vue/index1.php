@@ -10,23 +10,18 @@
     <div id="container">
         <!-- zone de connexion -->
         
-        <form action="verification.php" method="POST">
+        <form action="../../../administrateur/controleur/authentification/controleur_verification_login.php" method="post">
             <h1>Connexion</h1>
             
             <label><b>Username</b></label>
-            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="nom" required>
 
             <label><b>Password</b></label>
             <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
             <input type="submit" id='submit' value='LOGIN' >
             <input type="submit" id='sign up' value='SIGN UP' >
-            <?php
-            if(isset($_GET['erreur'])){
-                $err = $_GET['erreur'];
-                if($err==1 || $err==2)
-                    echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>
-        
+           
         </form>
     </div>
 </body>

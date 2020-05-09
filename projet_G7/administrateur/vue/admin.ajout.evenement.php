@@ -49,30 +49,30 @@ Citation de Victor Cherbuliez ; Le fiancé de Mademoiselle Saint-Maur (1876)</p>
 
 </div>
 </div>
-
+ 	 	 	 	date_fin 
        <div class="col-md-6 bg-light mt-4 box1 " > 
-           <form action="" class="box">
+           <form action="../../administrateur/controleur/ajout_even/controleur.ajout.even.php" method="post" class="box">
               <h5> <p>Categorie</p></h5>
-             <div>  <input type="text" class="border border-dark">
+             <div>  <input type="text" class="border border-dark" name="categorie" >
              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <h5> <p>Description</p></h5>
-             <div> <textarea name="" id="" cols="30" rows="3" class="box1"></textarea>
+             <div> <textarea name="description" id="" cols="30" rows="3" class="box1"></textarea>
              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
             <h5> <p>Organisateurs</p></h5>
-             <div>  <input type="text">
-             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+             <div>  <input type="text" name="organisateur" >
+             <small  id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
             <h5> <p> Debut d'Evenement</p></h5>
-             <div>  <input type="date">
+             <div>  <input type="date" name="date_debut" >
              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
             <h5> <p> Fin de l'Evenement</p></h5>
-             <div>  <input type="date">
+             <div>  <input type="date" name="date_fin" >
              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div>
