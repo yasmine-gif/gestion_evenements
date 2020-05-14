@@ -1,3 +1,3 @@
 # gestion_evenements
 nom:admin
-mots de pass addmin1
+mots de pass :admin1

@@ -19,7 +19,7 @@
               <div class="col-md-6 mt-4" >
                   
               <h2>Evenemento Administrator</h2> Administrateur: Yasmine <br> Email:YasmineSimplon@gmail.com </div>        
-              <div class="col-md-2" > <a href=""><img src="../img/deconnect.png" alt=""> <br> Deconnexion</a> <br>
+              <div class="col-md-2" > <a href="../../administrateur/vue/index.php"><img src="../img/deconnect.png" alt=""> <br> Deconnexion</a> <br>
               <?php       
            
             setlocale(LC_TIME, ['fr', 'fra', 'fr_FR']);

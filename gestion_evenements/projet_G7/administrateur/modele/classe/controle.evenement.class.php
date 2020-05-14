@@ -42,6 +42,19 @@
 
  
 
+		
+    function modifier_evement($id_evenement,$categorie,$description,$organisateur,$date_debut,$date_fin){
+
+        $modifier=$this->base->prepare("UPDATE evenement SET categorie=:categorie,description=:description,organisateur=:organisateur,date_debut=:date_debut,date_fin=:date_fin   WHERE id_evenement=:id_evenement");
+        $modifier->execute(array(
+            "categorie"  => $_POST['categorie'],
+            "description" => $_POST['description'],
+            "organisateur" =>$_POST['organisateur'],
+            "date_debut" =>$_POST['date_debut'],
+             "date_fin"  =>$_POST['date_fin'] 
+        ));
+
+    }
 }
 
 
